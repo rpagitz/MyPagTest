@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fungap 1</title>
+</head>
+
+<body>
+<button id="but_1">Click Me</button>
+<button id="clear">Clean Up</button>
+<div id="result"></div>
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/fg_one.js"></script>
+<script>
+ $('#but_1').click(function(){
+FGONE.Doit($('#result'))
+ })
+  $('#clear').click(function(){
+$('#result').html('')
+ })
+</script>
+</body>
+</html>
